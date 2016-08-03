@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Rock of all Ages</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Rock of all Ages</h1>
+        <input type="text" value="" id="spotify" placeholder="Spoitfy URL">
+        <input type="button" onclick="grabSongs()" value="Grab"/>
+<!--
+        <input type="text" value="blues traveler" id="artist" placeholder="Artist Name Here">
+        <input type="text" value="hook" id="song" placeholder="Song Name Here">
+-->
+        
+        <div class="result_box">
+        <h2>Status</h2>
+        <h3 class = "clean" id="result">Clean</h3>
+            <iframe id="scanner" src=""></iframe>
+        </div>
+        <div id="lyricsBox"></div>
+        <input type="button" onclick="check()" value="Check"/>
+    </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="grab.js"></script>
+    <script src="run.js"></script>
+</html>
